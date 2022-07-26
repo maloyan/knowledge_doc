@@ -66,4 +66,4 @@ jobs:
       id: a-task
       run: |
         ls
-        docker run -p 8000:8000 -v docs:/docs squidfunk/mkdocs-material
+        docker run -p 8000:8000 -v /home/ubuntu/:/docs squidfunk/mkdocs-material
