@@ -57,9 +57,9 @@ jobs:
     - name: Docker run
       uses: appleboy/ssh-action@master
       with:
-        host: ${{secrets.AWS_HOST}}
+        host: ${{ secrets.AWS_HOST }}
         username: ubuntu
-        key: ${{secrets.ACTION_PRIVATE_KEY}}
+        key: ${{ secrets.ACTION_PRIVATE_KEY }}
         port: 22
         envs: GITHUB_SHA
         script: |
