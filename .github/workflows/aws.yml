@@ -62,6 +62,6 @@ jobs:
         key: ${{ secrets.ACTION_PRIVATE_KEY }}
         port: 22
         script: |
-          docker stop squidfunk/mkdocs-material || true
-          docker rm squidfunk/mkdocs-material || true
-          docker run -p 8000:8000 -v "${PWD}":/docs -d --name squidfunk/mkdocs-material squidfunk/mkdocs-material
+          docker stop squidfunk/mkdocs_material || true
+          docker rm squidfunk/mkdocs_material || true
+          docker run -p 8000:8000 -v "${PWD}":/docs -d --name squidfunk/mkdocs_material squidfunk/mkdocs-material
