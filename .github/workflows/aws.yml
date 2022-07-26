@@ -65,4 +65,5 @@ jobs:
     - name: Deploying
       id: a-task
       run: |
-        docker run -p 8000:8000 -v ./docs:/docs squidfunk/mkdocs-material
+        ls
+        docker run -p 8000:8000 -v docs:/docs squidfunk/mkdocs-material
