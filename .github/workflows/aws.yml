@@ -54,16 +54,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Configure AWS credentials
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        # TODO Change your AWS region here!
-        aws-region: us-east-2
-
-    - name: Deploying
-      id: a-task
+    - name: Deploy to Server 1
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.ACTION_PRIVATE_KEY }}
+        REMOTE_HOST: ${{ secrets.AWS_HOST }}
+        REMOTE_USER: ubuntu
+    - name: Deploy
       run: |
         ls
         echo "${PWD}"
