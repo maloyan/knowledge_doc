@@ -61,9 +61,7 @@ jobs:
         username: ubuntu
         key: ${{ secrets.ACTION_PRIVATE_KEY }}
         port: 22
-        script: whoami
-    - name: Deploy
-      run: |
-        ls
-        echo "${PWD}"
-        docker run -p 8000:8000 -v "${PWD}":/docs -d squidfunk/mkdocs-material
+        script: |
+          ls
+          echo "${PWD}"
+          docker run -p 8000:8000 -v "${PWD}":/docs -d squidfunk/mkdocs-material
