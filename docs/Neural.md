@@ -1,17 +1,3 @@
-03_Neural_00.md
-03_Neural_01.md
-03_Neural_02.md
-03_Neural_03.md
-03_Neural_04.md
-03_Neural_05.md
-03_Neural_06.md
-03_Neural_07.md
-03_Neural_08.md
-03_Neural_09.md
-03_Neural_10.md
-03_Neural_11.md
-03_Neural_12.md
-03_Neural_13.md
 Нейронные сети
 ==============
 Нейронные сети. Модель нейрона. MLP. Понятие функции активации. Алгоритм обратного распространения ошибки. {#3.01}
