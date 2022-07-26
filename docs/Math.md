@@ -9,7 +9,7 @@
 кости $\Omega=\{0, 1, 2, 3, 4, 5, 6\}$](images/Kismet_Die_Faces.png)
 
 Обозначим множество подмножеств элементарных событий $\Omega$ как
-$\mathkal{F}$. Множество $\mathcal{F}$ называется **алгеброй множеств**,
+$\mathcal{F}$. Множество $\mathcal{F}$ называется **алгеброй множеств**,
 если выполнены следующие требования
 
 1.  $\Omega \in \mathcal{F}, \varnothing\in\mathcal{F}$ ($\varnothing$ -
@@ -375,11 +375,12 @@ $$\forall \theta \in \Theta \;\; P_\theta (T_1(X) \leq \theta \leq T_2(X)) \geq 
 $P \in \{P_\theta | \theta \in \Theta\}$, $x = (x_1, \dots, x_n)$ -
 реализация выборки $X$. Если $X$ имеет дискретное распределение, то
 определим функцию $L(x, \theta)$:
-$$L(x, \theta) = \prod\limits_{i=1}^{n} P(X_i = x_i)$$ Если $X$ имеет
+$$L(x, \theta) = \prod\limits_{i=1}^{n} P(X_i = x_i)$$ 
+Если $X$ имеет
 непрерывное распределение с плотностью $p(x, \theta)$, то определим
 функцию $L(x, \theta)$:
-$$L(x, \theta) = \prod\limits_{i=1}^{n} p(x_i, \theta)$$ Функция
-$L(x, \theta)$ называется *функцией правдоподобия*.
+$$L(x, \theta) = \prod\limits_{i=1}^{n} p(x_i, \theta)$$ 
+Функция $L(x, \theta)$ называется *функцией правдоподобия*.
 
 **Определение 6**. Пусть $X=(X_1,\dots,X_n)$ --- выборка из
 $P \in \{P_\theta | \theta \in \Theta\}$ и $\Theta \in \mathbb{R}$ и
@@ -387,7 +388,8 @@ $L(x, \theta)$ - функция правдоподобия. *Оценкой ма
 правдоподобия* $\hat{\theta}$ называется такая точка параметрического
 множества $\Theta$, в которой функция максимального правдоподобия
 $L(x ,\theta)$ при заданном $x$ достигает максимума:
-$$L(x, \hat{\theta}) = \sup_{\theta \in \Theta} L(x, \theta)$$\
+$$L(x, \hat{\theta}) = \sup_{\theta \in \Theta} L(x, \theta)$$
+
 Для максимизации функции правдоподобия обычно берут ее логарифм, т.к.
 вычисления будут проще.
 
@@ -500,7 +502,8 @@ $\vec{v} \neq 0$
 
 Метод поиска собственных векторов:
 $$A\vec{v} = \lambda\vec{v} \quad A\vec{v} - \lambda\vec{v}=0 \quad A\vec{v} - \lambda\vec{v}E = 0 \quad (A\vec{v} - \lambda{E})\vec{v} = 0$$
-$$\det{(A - \lambda{E})}\vec{v} = 0, \quad \vec{v} \neq 0 \implies \det{(A - \lambda{E})} = 0$$\
+$$\det{(A - \lambda{E})}\vec{v} = 0, \quad \vec{v} \neq 0 \implies \det{(A - \lambda{E})} = 0$$
+
 /\*А теперь про разложение, самое важное\*/\
 \
 **Определение 5** Спектральное разложение - разложение матрицы $A$ вида
@@ -529,7 +532,7 @@ $$\left\|A\right\|_{F} = \left\|A\right\|_{2} = \sqrt{ \sum_{ij} \left|a_{ij}\ri
 Алгоритм SVD-разложения матрицы $A_{m×n}$:
 
 1.  Составляем матрицу $A^\intercal{A}$ и находим её собственные
-    значения $\lambda_{1} \re \cdots \re \lambda_{n}$, находим ненулевые
+    значения $\lambda_{1} ... \lambda_{n}$, находим ненулевые
     сингулярные числа $\sigma_{i} = \sqrt{\lambda_{i}}$ и составляем из
     них диагональную матрицу $\Sigma$.
 
