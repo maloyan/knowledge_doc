@@ -64,4 +64,4 @@ jobs:
         script: |
           docker stop mkdocs_material || true
           docker rm mkdocs_material || true
-          docker run -td --pull always --restart unless-stopped -p 8000:8000 -v "${PWD}":/docs --name mkdocs_material squidfunk/mkdocs-material
+          docker run -td --pull always -p 8000:8000 -v "${PWD}":/docs --restart unless-stopped --name mkdocs_material squidfunk/mkdocs-material
