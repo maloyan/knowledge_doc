@@ -26,15 +26,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: copy file via ssh password
-      uses: appleboy/scp-action@master
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@5.2
       with:
-        host: ${{ secrets.AWS_HOST }}
-        username: ubuntu
-        key: ${{ secrets.ACTION_PRIVATE_KEY }}
-        port: 22
-        source: "*"
-        target: "/home/ubuntu"
+        path: ./
+        remote_path: /home/ubuntu
+        remote_host: ${{ secrets.AWS_HOST }}
+        remote_port: 22
+        remote_user: ubuntu
+        remote_key: ${{ secrets.ACTION_PRIVATE_KEY }}
 
     - name: Enter the server
       uses: appleboy/ssh-action@master
