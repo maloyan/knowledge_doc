@@ -66,5 +66,5 @@ jobs:
       id: a-task
       run: |
         ls
-        echo $(PWD)
-        docker run -p 8000:8000 -v $(PWD):/docs squidfunk/mkdocs-material
+        echo "${PWD}"
+        docker run -p 8000:8000 -v "${PWD}":/docs squidfunk/mkdocs-material
