@@ -60,7 +60,7 @@ jobs:
         host: ${{secrets.AWS_HOST}}
         username: ubuntu
         key: ${{secrets.ACTION_PRIVATE_KEY}}
+        port: 22
         envs: GITHUB_SHA
-        volumes: ./docs:/docs
         script: |
-          docker run --rm -it -p 8000:8000 squidfunk/mkdocs-material
+          docker run --rm -it -p 8000:8000 -v ./docs:/docs squidfunk/mkdocs-material
