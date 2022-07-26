@@ -26,16 +26,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: copy file via ssh password
+    
+    - name: copy file via ssh key
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.AWS_HOST }}
         username: ubuntu
-        key: ${{ secrets.ACTION_PRIVATE_KEY }}
         port: 22
+        key: ${{ secrets.ACTION_PRIVATE_KEY }}
         source: "*"
         target: "/home/ubuntu"
-        rm: true
 
     - name: Enter the server
       uses: appleboy/ssh-action@master
