@@ -54,12 +54,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Deploy to Server 1
-      uses: easingthemes/ssh-deploy@main
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.ACTION_PRIVATE_KEY }}
-        REMOTE_HOST: ${{ secrets.AWS_HOST }}
-        REMOTE_USER: ubuntu
+    - name: Enter the server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.AWS_HOST }}
+        username: ubuntu
+        key: ${{ secrets.ACTION_PRIVATE_KEY }}
+        port: 22
+        script: whoami
     - name: Deploy
       run: |
         ls
