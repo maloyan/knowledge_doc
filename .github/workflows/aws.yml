@@ -39,6 +39,7 @@ jobs:
     - name: Enter the server
       uses: appleboy/ssh-action@master
       with:
+        switches: -avzr --delete
         host: ${{ secrets.AWS_HOST }}
         username: ubuntu
         key: ${{ secrets.ACTION_PRIVATE_KEY }}
