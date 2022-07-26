@@ -35,7 +35,6 @@ jobs:
         port: 22
         source: "*"
         target: "/home/ubuntu"
-        overwrite: true
 
     - name: Enter the server
       uses: appleboy/ssh-action@master
