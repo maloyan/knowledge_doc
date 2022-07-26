@@ -26,16 +26,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    
-    - name: copy file via ssh key
-      uses: appleboy/scp-action@master
-      with:
-        host: ${{ secrets.AWS_HOST }}
-        username: ubuntu
-        port: 22
-        key: ${{ secrets.ACTION_PRIVATE_KEY }}
-        source: "*"
-        target: "/home/ubuntu"
 
     - name: Enter the server
       uses: appleboy/ssh-action@master
@@ -49,4 +39,4 @@ jobs:
           ls 
           docker stop mkdocs_material || true
           docker rm mkdocs_material || true
-          docker run -d -p 8000:8000 -v "${PWD}":/docs --name mkdocs_material squidfunk/mkdocs-material
+          docker run --rm -d -p 8000:8000 -v "${PWD}"/knowledge_doc:/docs --name mkdocs_material squidfunk/mkdocs-material
