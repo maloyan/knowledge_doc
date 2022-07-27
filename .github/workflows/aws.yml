@@ -35,8 +35,4 @@ jobs:
         key: ${{ secrets.ACTION_PRIVATE_KEY }}
         port: 22
         script: |
-          echo "${PWD}"
-          ls 
-          docker stop mkdocs_material || true
-          docker rm mkdocs_material || true
-          docker run --rm -d -p 8000:8000 -v "${PWD}"/knowledge_doc:/docs --name mkdocs_material squidfunk/mkdocs-material
+          cd knowledge_doc && git pull origin master
