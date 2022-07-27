@@ -1,4 +1,4 @@
-![image](images/imagen.jpeg)
+![image](images/dalle.png)
 
 # **Робастные модели в машинном обучении**
 
