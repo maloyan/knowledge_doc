@@ -1,5 +1,7 @@
 site_name: AI course
 
+repo_url: https://github.com/maloyan/knowledge_doc/
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
