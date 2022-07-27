@@ -1,4 +1,4 @@
-![image](images/club_logo.png)
+![image](images/imagen.jpeg)
 
 # **Робастные модели в машинном обучении**
 
