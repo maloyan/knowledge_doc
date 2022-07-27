@@ -1237,12 +1237,12 @@ reference="ris:seq2seq_loss"} Нужен только размеченный д�
 например, можно взять \"Войну и Мир\" на русском и английском языке.
 
 ![Encoder-Decoder архитектура для задачи машинного перевода с
-английского на французский.](images/seq2seq_basic.png){width="17.0cm"}
+английского на французский.](images/seq2seq_basic.png)
 
 [\[ris:seq2seq\_basic\]]{#ris:seq2seq_basic label="ris:seq2seq_basic"}
 
 ![Loss при обучении Encoder-Decoder
-архитектуры.](images/seq2seq_loss.png){width="17.0cm"}
+архитектуры.](images/seq2seq_loss.png)
 
 [\[ris:seq2seq\_loss\]]{#ris:seq2seq_loss label="ris:seq2seq_loss"}
 
@@ -1292,7 +1292,7 @@ reference="ris:seq2seq_loss"} Нужен только размеченный д�
     слова с учетом внимания.
 
 ![Механизм внимания при переводе следующего
-слова.](images/attention_01.png){width="10.0cm"}
+слова.](images/attention_01.png)
 
 [\[ris:attention\_01\]]{#ris:attention_01 label="ris:attention_01"}
 
@@ -1361,7 +1361,7 @@ width="14.0cm"}
 
 ![Архитектура трансформер. Энкодер внутри себя включает Self-Attention и
 полносвязный слой с
-нелинейностью.](images/transformer_encoder.png){width="17.0cm"}
+нелинейностью.](images/transformer_encoder.png)
 
 [\[ris:transformer\_encoder\]]{#ris:transformer_encoder
 label="ris:transformer_encoder"}
@@ -1374,7 +1374,7 @@ reference="ris:transformer_decoder"}) очень похож на энкодер,
 двумя RNN.
 
 ![Архитектура трансформер.
-Декодер.](images/transformer_decoder.png){width="17.0cm"}
+Декодер.](images/transformer_decoder.png)
 
 [\[ris:transformer\_decoder\]]{#ris:transformer_decoder
 label="ris:transformer_decoder"}
@@ -1386,7 +1386,7 @@ reference="ris:masked_decoder"}), для того, чтобы декодер н�
 части фразы. Для этого зануляются вектора тех элементов, до которых
 декодер ещё не дошел на этой итерации.
 
-![Маскирование в декодере.](images/masked_decoder.png){width="13.0cm"}
+![Маскирование в декодере.](images/masked_decoder.png)
 
 [\[ris:masked\_decoder\]]{#ris:masked_decoder
 label="ris:masked_decoder"}
@@ -1457,7 +1457,7 @@ reference="ris:siamse_network"}.
 человека и ожидать на выходе метку 1 -- фото одного человека. И ожидать
 метку 0 для фотографий разных людей.
 
-![Сиамская нейронная сеть.](images/siamse_network.png){width="16.0cm"}
+![Сиамская нейронная сеть.](images/siamse_network.png)
 
 [\[ris:siamse\_network\]]{#ris:siamse_network
 label="ris:siamse_network"}
@@ -1482,7 +1482,7 @@ max(0, margin - d(r_{anchor}, r_{negative})), & \text{if negative pair}
 \end{cases}$$
 
 ![Пример якоря, и изображений позитивного и негативного
-классов.](images/anchor_pos_neg_example.png){width="16.0cm"}
+классов.](images/anchor_pos_neg_example.png)
 
 [\[ris:anchor\_pos\_neg\_example\]]{#ris:anchor_pos_neg_example
 label="ris:anchor_pos_neg_example"}
@@ -1528,7 +1528,7 @@ $\underset{\theta}{\operatorname{argminKL}}(P_{data}(x)||P_{model}(X,\theta)$
     тоже.
 
 ![Таксономия(классификация) порождающих
-моделей](images/3_8_gen_models_classification.png){width="0.7\linewidth"}
+моделей](images/3_8_gen_models_classification.png)
 
 [\[ris:gen\_classification\]]{#ris:gen_classification
 label="ris:gen_classification"}
@@ -1538,7 +1538,7 @@ label="ris:gen_classification"}
 GAN - одна из наиболее эффективных архитектур для создания реалистичныйх
 данных.
 
-![Архитектура GAN](images/3_8_gan_arc.png){width="0.5\linewidth"}
+![Архитектура GAN](images/3_8_gan_arc.png)
 
 [\[ris:gan\_arc\]]{#ris:gan_arc label="ris:gan_arc"}
 
@@ -1564,7 +1564,7 @@ GAN - одна из наиболее эффективных архитектур
 весов дискриминатора.
 
 ![Обучение
-дискриминатора](images/3_8_disc_learning.png){width="0.5\linewidth"}
+дискриминатора](images/3_8_disc_learning.png)
 
 [\[ris:disc\_learning\]]{#ris:disc_learning label="ris:disc_learning"}
 
@@ -1575,7 +1575,7 @@ GAN - одна из наиболее эффективных архитектур
 не участвует. Затем корректируем веса генератора.
 
 ![Обучение
-генератора](images/3_8_gen_learning.png){width="0.5\linewidth"}
+генератора](images/3_8_gen_learning.png)
 
 [\[ris:gen\_learning\]]{#ris:gen_learning label="ris:gen_learning"}
 
@@ -1686,7 +1686,7 @@ AutoEncoder[]{label="ris:autoencoder"}](images/autoencoder.png){#ris:autoencoder
 width="8.5cm"}
 
 ![Denoising AutoEncoder. Автоэнкодер можно применять как средство для
-понижения шума.](images/denoising_autoencoder.png){width="9.0cm"}
+понижения шума.](images/denoising_autoencoder.png)
 
 [\[ris:denoising\_autoencoder\]]{#ris:denoising_autoencoder
 label="ris:denoising_autoencoder"}
@@ -1720,7 +1720,7 @@ $$L_{VAE} =  \mathcal{L}_{reconstruction} + KL(q(z) || N(\mu, \sigma)).$$
 рисунке [\[ris:cv\_tasks\]](#ris:cv_tasks){reference-type="ref"
 reference="ris:cv_tasks"}:
 
-![Задачи компьютерного зрения.](images/cv_tasks.png){width="16cm"}
+![Задачи компьютерного зрения.](images/cv_tasks.png)
 
 [\[ris:cv\_tasks\]]{#ris:cv_tasks label="ris:cv_tasks"}
 
@@ -1953,7 +1953,7 @@ width="16cm"}
 *Идея*: конвертировать изображения в некие визуальные токены и подавать
 их в трансформер\
 
-![image](images/3_11_transformer_arch.jpeg){width="90%"}
+![image](images/3_11_transformer_arch.jpeg)
 
 -   Вначале используется обычный backbone для получения feature maps
 
@@ -1975,7 +1975,7 @@ width="16cm"}
 Токенизатор извлекает визуальные токены. По сути мы берем feature map,
 делаем reshape в (H \* W, C) и из этого получаем токены
 
-![image](images/3_11_tokenisator.jpeg){width="70%"}
+![image](images/3_11_tokenisator.jpeg)
 
 **Position encoding**
 
@@ -2018,7 +2018,7 @@ $T_{in}, T_{out}$ - входящие и выходящие токены.
 мобильных устройств 22 050 Hz. Таким образом 10 секундной записи будет
 соотвествовать 220 500 сэмплов.
 
-![image](images/Wave_signal.png){width="13cm"}
+![image](images/Wave_signal.png)
 
 **Звуком** называют акустические колебания в диапазоне частот от 16 Hz
 до 20 000 Hz. Ниже (инфразвук) и выше (ультразвук) человеческое ухо не
@@ -2033,7 +2033,7 @@ $T_{in}, T_{out}$ - входящие и выходящие токены.
 отражает диапазон частот в конкретный момент времени. Такое
 представление называется **частотным** или **frequency domain**.
 
-![image](images/Spectr_signal.png){width="13cm"}
+![image](images/Spectr_signal.png)
 
 Наименьшая частота в сигнале называется **фундаментальной частотой**.
 Частоты, которые представляют собой фундаментальную частоту умноженную
@@ -2041,12 +2041,12 @@ $T_{in}, T_{out}$ - входящие и выходящие токены.
 
 Связь между временным и частотным представлениями сигнала:
 
-![image](images/Time_Freq_Amplitude.png){width="13cm"}
+![image](images/Time_Freq_Amplitude.png)
 
 Спектрограммы обычно получают путем применения преобразования Фурье к
 исходному сигналу. Пример спектрограммы:
 
-![image](images/Spectrogram.png){width="13cm"}
+![image](images/Spectrogram.png)
 
 **Фонема** - минимальная смыслоразличительная единица языка - типа одной
 транскрипции на английском, с учётом всех возможных вариаций для этой
@@ -2064,11 +2064,11 @@ $$P(x|h)=\prod_{t=1}^{T} P\left(x_{t} \mid x_{1}, x_{2}, \ldots, x_{t-1}, h\righ
 
 Общий вид WaveNet:
 
-![image](images/WaveNet.png){width="13cm"}
+![image](images/WaveNet.png)
 
 Основная идея реализована в дилатационных свёртках:
 
-![image](images/Dilation_conv.png){width="13cm"}
+![image](images/Dilation_conv.png)
 
 Преимущества и недостатки:
 
@@ -2094,7 +2094,7 @@ DeepVoice состояла из 4х независимых моделей:
 
 -   Audio synthesis - преобразованный WaveNet
 
-![image](images/DeepVoice.png){width="13cm"}
+![image](images/DeepVoice.png)
 
 Преимущества и недостатки:
 
@@ -2106,7 +2106,7 @@ DeepVoice состояла из 4х независимых моделей:
 
 **Tacotron (модель для генерации речи)**\
 
-![image](images/Tacotron.png){width="13cm"}
+![image](images/Tacotron.png)
 
 **Encoder**
 
@@ -2152,7 +2152,7 @@ DeepVoice состояла из 4х независимых моделей:
 
 Подробнее про модуль CBHG:
 
-![image](images/CBHG.png){width="13cm"}
+![image](images/CBHG.png)
 
 Оценка MOS - 3,82
 
