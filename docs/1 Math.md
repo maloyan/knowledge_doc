@@ -15,9 +15,7 @@
 $$\vec e =\begin{bmatrix} e_1 \\ e_2 \\ e_3 \end{bmatrix}, \qquad \vec e^T = (e_1, e_2, e_3)$$
 
 
-2 ![](images/Colors.png)*Изображение $\pi$, как вектор $1 \times 64$
-$(0.65, 0.05, 0.20, . . . , 0.28, 0.00, 0.90).$*
-
+![](images/Colors.png)
 ![](images/Pi%20as%20vector.png)*Изображение $\pi$, как вектор $1 \times 64$
 $(0.65, 0.05, 0.20, . . . , 0.28, 0.00, 0.90).$*
 
