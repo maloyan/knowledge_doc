@@ -1110,7 +1110,8 @@ $\int_{-\infty}^{\infty} p(x) = 1$, так как попадание $\xi$ в
 ![image](images/Raspredelenie.png) 
 ![image](images/Plotnost.png)
 
-Итого получили формулы взаимосвязи: 
+Итого получили формулы взаимосвязи:
+
 $$F(x) = \int_{\infty}^{x} p(z) dz$$
 
 $$p(x) = \frac{d F(x)}{dx}$$
