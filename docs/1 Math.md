@@ -1294,9 +1294,9 @@ $$D = \frac {(\bar x - x_1)^2 \,+\, (\bar x - x_2)^2 +\dots + \,(\bar x - x_N)^2
 
 Заметим, что эта величина по структуре совпадает с формулой математического ожидания, то есть мы можем представить её в виде:
 
-$$D = \sum_{i=1}^{N} {\frac{(x_i - M(x))^2}{N}} = \sum_{i=1}^{n} {\frac{k_i \, (x_i - M(x))^2}{N}} = \sum_{i=1}^{n} {(x_i - M(x))^2 \frac{k_i}{N}}$$
+$$D = \sum_{i=1}^{N} {\frac{(x_i - M(x))^2}{N}} = \sum_{i=1}^{n} {\frac{k_i \, (x_i - M(x))^2}{N}} = \sum_{i=1}^{n} {(x_i - M(x))^2 \frac{k_i}{N}} = $$
 
-$$ = M \biggl[ (x-M(x))^2 \biggr] = M \biggl[ x^2 - 2xM(x) + M^2(x)\biggr] $$
+$$ = M \biggl[ (x-M(x))^2 \biggr] = M \biggl[ x^2 - 2xM(x) + M^2(x)\biggr] = $$
 
 $$ = M(x^2) - 2M(x)M(x) + M^2(x) = M(x^2) - M^2(x)$$
 
