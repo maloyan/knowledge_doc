@@ -446,7 +446,7 @@ collapse. (например дискриминатор быстрее обуча
 
 Аппроксимацией EMD является расстояние Вассерштейна или W-loss.
 
-$\underset{g}{\operatorname{min}}\underset{c}{\operatorname{max}} (c(x)) - (c(g(z)))$
+$$\underset{g}{\operatorname{min}}\underset{c}{\operatorname{max}} (c(x)) - (c(g(z)))$$
 
 Генератор пытается минимизировать расстояние, а critic максимизировать.
 Важное требование к функции critic, она должна быть 1-L непрерывной по
