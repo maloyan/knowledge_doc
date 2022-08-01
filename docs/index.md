@@ -31,3 +31,5 @@
 
 -   [Видеозаписи Саита](https://disk.yandex.ru/d/aWl2QwfFi0RW6Q)
 
+-   [Dive into Deep Learning](https://arxiv.org/pdf/2106.11342.pdf)
+
