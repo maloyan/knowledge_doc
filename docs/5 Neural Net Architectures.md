@@ -469,19 +469,13 @@ $$d(\mathcal{N}(\mu, \sigma), \mathcal{N}(\hat{\mu}, \hat{\sigma})) = (\mu - \ha
 
 Базовый подход для рассчета FID, на примере генерации изображений, содержит следующие шаги:
 
-Input: 
+**Input**: Функция для генерации эмбедингов $f: \Omega_X \rightarrow \mathbb{R}^n$; Два датасета: с изображениями из выборки $S \subset \Omega_X$  и сгенерированные $\hat{S}$
 
-1. Функция для генерации эмбедингов $f: \Omega_X \rightarrow \mathbb{R}^n$
+**Algorithm**:
 
-2. Два датасета: с изображениями из выборки $S \subset \Omega_X$  и сгенерированные $\hat{S}$
-
-Algorithm:
-
-1. Посчитать эмбединги для данных двух наборов данных $f(S), f(\hat{S})$
-
-2. Найти нормальные распределения $\mathcal{N}(\mu, \Sigma)$ и $\mathcal{N}(\hat{\mu}, \hat{\Sigma})$ для полученных $f(S), f(\hat{S})$.
-
-3. Посчитать $d(\mathcal{N}(\mu, \sigma), \mathcal{N}(\hat{\mu}, \hat{\sigma}))$
+- Посчитать эмбединги для данных двух наборов данных $f(S), f(\hat{S})$
+- Найти нормальные распределения $\mathcal{N}(\mu, \Sigma)$ и $\mathcal{N}(\hat{\mu}, \hat{\Sigma})$ для полученных $f(S), f(\hat{S})$.
+- Посчитать $d(\mathcal{N}(\mu, \sigma), \mathcal{N}(\hat{\mu}, \hat{\sigma}))$
 
 **Inception score** Идея состоит в том что мы берем предобученный
 классификатор Inceptionv3, подаем на вход сгенерированный пример и
