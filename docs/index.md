@@ -33,3 +33,5 @@
 
 -   [Dive into Deep Learning](https://arxiv.org/pdf/2106.11342.pdf)
 
+-   [Annotated Papers with Pytorch code](https://nn.labml.ai/)
+
