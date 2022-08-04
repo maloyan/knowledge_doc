@@ -33,5 +33,5 @@
 
 -   [Dive into Deep Learning](https://arxiv.org/pdf/2106.11342.pdf)
 
--   [Annotated Papers with Pytorch code](https://nn.labml.ai/)
+-   [Annotated Papers with Pytorch code](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
 
