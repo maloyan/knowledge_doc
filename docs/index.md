@@ -37,3 +37,5 @@
 
 -   [Karpathy backpropagation](https://www.youtube.com/watch?v=VMj-3S1tku0)
 
+-   [Logistic Regression Visualisation](https://twitter.com/Bumgarner_JR/status/1560653968015249408?s=20) 
+
