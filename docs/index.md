@@ -35,3 +35,5 @@
 
 -   [Annotated Papers with Pytorch code](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
 
+-   [Karpathy backpropagation](https://www.youtube.com/watch?v=VMj-3S1tku0)
+
