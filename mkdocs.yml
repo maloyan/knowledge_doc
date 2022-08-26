@@ -16,3 +16,17 @@ plugins:
       lang: 
         - en
         - ru
+
+nav:
+  - 1 Math: math.md
+  - 2 Probability & Statistics: probability.md
+  - 3 Machine Learning: ml.md
+  - 4 Deep Learning: dl.md
+  - 5 Neural Net Architectures: nn_architectures.md
+  - 6 Image Generation: image_generation.md
+  - 7 Computer Vision: cv.md
+  - 8 Natural Language Processing: nlp.md
+  - 9 Multimodal Modeling: multimodal.md
+  - 10 Signal Processing: signal.md
+  - 11 Robustness: robustness.md
+  
