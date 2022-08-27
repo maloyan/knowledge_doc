@@ -28,6 +28,9 @@ nav:
   - 8 Image Generation: image_generation.md
   - 9 Multimodal Modeling: multimodal.md
   - 10 Signal Processing: signal.md
-  - 11 Robustness: robustness.md
+  - 11 Reinforcement Learning: rl.md
+  - 12 Interpretation: interpretation.md
+  - 13 Graph NN: graph.md
+  - 14 Robustness: robustness.md
   - Exam questions: exam.md
   
