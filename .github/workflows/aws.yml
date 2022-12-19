@@ -3,7 +3,7 @@ name: Deploy to Amazon ECS
 on:
   push:
     branches:
-      - "master"
+      - "main"
 
 env:
   AWS_REGION: us-east-1                       # set this to your preferred AWS region, e.g. us-west-1
@@ -31,8 +31,8 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.AWS_HOST }}
-        username: ubuntu
+        username: ${{ secrets.USER }}
         key: ${{ secrets.ACTION_PRIVATE_KEY }}
-        port: 22
+        port: ${{ secrets.PORT }}
         script: |
-          cd knowledge_doc && git pull origin master
+          cd ai-deadlines && git pull origin main
