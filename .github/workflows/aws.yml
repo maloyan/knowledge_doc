@@ -35,4 +35,4 @@ jobs:
         key: ${{ secrets.ACTION_PRIVATE_KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          cd ai-deadlines && git pull origin master
+          cd knowledge_doc && git pull origin master
