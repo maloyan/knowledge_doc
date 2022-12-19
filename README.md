@@ -1,1 +1,1 @@
-# **Math & ML cheatcheet**
+# **Math & ML cheatsheet**
