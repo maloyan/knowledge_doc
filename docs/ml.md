@@ -105,6 +105,7 @@ Note: При обновлении параметров необходимо сн
 -   **FN** (False Negative) - выход алгоритма = 0 и правильный ответ = 1
 
 ![image](images/precisionrecall.jpg)
+![scheme](images/tn_tp_fn_fp.png)
 
 -   **Accuracy** = $\frac{TP + TN}{TP + FP + TN + FN}$ - доля
     правильных ответов в тесте. Минусы: не учитывает дисбаланс классов и
