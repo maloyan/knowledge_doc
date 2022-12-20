@@ -127,6 +127,11 @@ Note: При обновлении параметров необходимо сн
 
 *Note*: Precision и Recall обратно связаны, но их сумма не равна 1.
 
+|![](images/confusion_matrix.png)|
+|:--:|
+|[image from Wikipedia](https://en.wikipedia.org/wiki/Confusion_matrix)|
+
+
 **ROC AUC**
 
 -   Обучающая выборка: $X^m = \{(x_1, y_1), \dots, (x_m, y_m)\}$
